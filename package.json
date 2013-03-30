@@ -1,0 +1,23 @@
+{
+  "author": {
+    "name": "Soares Chen",
+    "email": "soares.chen@gmail.com",
+    "url": "http://soareschen.com"
+  },
+  "name": "quiver-error",
+  "desription": "Create error objects quickly",
+  "version": "0.0.1",
+  "homepage": "https://github.com/quiverjs/error",
+  "repository": {
+    "url": "git@github.com:quiverjs/error.git"
+  },
+  "bugs": {
+    "url": "https://github.com/quiverjs/node-stream/issues",
+    "email": "quiverjs@soareschen.com"
+  },
+  "licenses": {
+    "type": "MIT",
+    "url": "https://raw.github.com/quiverjs/license/master/LICENSE"
+  },
+  "main": "./lib/error"
+}
