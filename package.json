@@ -6,7 +6,7 @@
   },
   "name": "quiver-error",
   "desription": "Create error objects quickly",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/quiverjs/error",
   "repository": {
     "url": "git@github.com:quiverjs/error.git"
