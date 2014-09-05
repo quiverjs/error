@@ -11,7 +11,7 @@ var noAsyncError = function(callback) {
 var withAsyncError = function(callback) {
   var asyncErr = error.asyncError()
   process.nextTick(function() {
-    callback(asyncErr(500, 'test error'))
+    callback(asyncErr(error.error(500, 'test error')))
   })
 }
 
@@ -31,21 +31,26 @@ describe('test async error', function() {
     })
   })
 
-  it('async error shoud have both stack traces', function() {
+  it('async error shoud have both stack traces', 
+  function(callback) {
     withAsyncError(function(err) {
-      should.exist(err.syncStack)
+      var callstack = err.callstacks[0]
+      should.exist(callstack.sync)
+      should.exist(callstack.async)
       console.log('error with sync stack:')
-      console.log(err.stack)
-      console.log(err.syncStack)
+      console.log(err)
+
+      callback()
     })
   })
 
   it('async error add sync stack when propogating', function() {
     nestedAsyncError(function(err) {
-      should.exist(err.syncStack)
-      console.log('error with sync stack:')
-      console.log(err.stack)
-      console.log(err.syncStack)
+      var callstack = err.callstacks[0]
+      should.exist(callstack.sync)
+      should.exist(callstack.async)
+      console.log('error with async stack:')
+      console.log(err)
     })
   })
 })

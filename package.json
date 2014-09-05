@@ -6,7 +6,7 @@
   },
   "name": "quiver-error",
   "desription": "Create error objects quickly",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/quiverjs/error",
   "repository": {
     "url": "git@github.com:quiverjs/error.git"
@@ -15,8 +15,8 @@
     "quiver-callstack": "0.0.1"
   },
   "devDependencies": {
-    "mocha": ">=1.8.1",
-    "should": ">=1.2.2"
+    "mocha": "^1.21.4",
+    "should": "^4.0.4"
   },
   "bugs": {
     "url": "https://github.com/quiverjs/node-stream/issues",
