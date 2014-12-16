@@ -7,9 +7,9 @@
   "name": "quiver-error",
   "desription": "Create error objects quickly",
   "version": "1.0.0",
-  "homepage": "https://github.com/quiverjs/error",
+  "homepage": "https://github.com/quiverjs/quiver-object",
   "repository": {
-    "url": "git@github.com:quiverjs/error.git"
+    "url": "git@github.com:quiverjs/quiver-object.git"
   },
   "dependencies": {
     "traceur": "0.0.79"
