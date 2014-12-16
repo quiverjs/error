@@ -6,7 +6,7 @@
   },
   "name": "quiver-error",
   "desription": "Create error objects quickly",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/quiverjs/quiver-object",
   "repository": {
     "url": "git@github.com:quiverjs/quiver-object.git"
@@ -26,7 +26,7 @@
     "type": "MIT",
     "url": "https://raw.github.com/quiverjs/license/master/LICENSE"
   },
-  "main": "./lib/error",
+  "main": "./index.js",
   "scripts": {
     "test": "mocha es5/test",
     "pretest": "npm run build",
