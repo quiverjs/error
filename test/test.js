@@ -2,11 +2,11 @@ import 'traceur'
 import { error } from '../lib/error'
 
 import chai from 'chai'
-var should = chai.should()
+let should = chai.should()
 
 describe('quiver error test', () => {
   it('basic error test', () => {
-    var err = error(404, 'Not Found')
+    let err = error(404, 'Not Found')
     err.code.should.equal(404)
     err.errorCode.should.equal(404)
     err.message.should.equal('Not Found')

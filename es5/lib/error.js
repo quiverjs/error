@@ -5,7 +5,7 @@ Object.defineProperties(exports, {
     }},
   __esModule: {value: true}
 });
-var error = (function(errorCode, errorMessage, details) {
+let error = (function(errorCode, errorMessage, details) {
   return new ServerError(errorCode, errorMessage, details);
 });
 var ServerError = function ServerError() {

@@ -5,18 +5,18 @@
     "url": "http://soareschen.com"
   },
   "name": "quiver-error",
-  "desription": "Create error objects quickly",
-  "version": "1.0.1",
-  "homepage": "https://github.com/quiverjs/quiver-object",
+  "desription": "Create error objects along with HTTP status code",
+  "version": "1.1.0",
+  "homepage": "https://github.com/quiverjs/quiver-error",
   "repository": {
-    "url": "git@github.com:quiverjs/quiver-object.git"
+    "url": "git@github.com:quiverjs/quiver-error.git"
   },
   "dependencies": {
-    "traceur": "0.0.79"
+    "traceur": "~0.0.81"
   },
   "devDependencies": {
     "chai": "^1.10.0",
-    "mocha": "^2.0.1"
+    "mocha": "^2.1.0"
   },
   "bugs": {
     "url": "https://github.com/quiverjs/quiver-error/issues",
@@ -28,11 +28,10 @@
   },
   "main": "./index.js",
   "scripts": {
-    "test": "mocha es5/test",
-    "pretest": "npm run build",
-    "prepublish": "npm run build",
-    "build": "npm run build-lib && npm run build-test",
-    "build-lib": "traceur --dir lib es5/lib --modules commonjs",
-    "build-test": "traceur --dir test es5/test --modules commonjs"
+    "test": "make unit-test",
+    "prepublish": "make build"
+  },
+  "engines": {
+    "iojs": "^1.0.4"
   }
 }
