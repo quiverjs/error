@@ -2,4 +2,4 @@
 
 var traceur = require('traceur')
 
-module.exports = require('./es5/lib/error.js')
+module.exports = require('./out/lib/error.js')
