@@ -6,15 +6,13 @@
   },
   "name": "quiver-error",
   "desription": "Create error objects along with HTTP status code",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "homepage": "https://github.com/quiverjs/quiver-error",
   "repository": {
     "url": "git@github.com:quiverjs/quiver-error.git"
   },
-  "dependencies": {
-    "babel": "~4.7.7"
-  },
   "devDependencies": {
+    "babel": "~4.7.12",
     "chai": "^1.10.0",
     "mocha": "^2.1.0"
   },
